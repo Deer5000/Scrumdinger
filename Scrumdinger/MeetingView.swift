@@ -26,16 +26,20 @@ struct MeetingView: View {
                     Label("600", systemImage: "hourglass.tophalf.fill")
                 }
             }
+            .accessibilityElement(children: /*@START_MENU_TOKEN@*/.ignore/*@END_MENU_TOKEN@*/)
+            .accessibilityLabel(Text("Time Remaining"))
+            .accessibilityValue(Text("10 Minutes"))
             Circle()
                 .strokeBorder(lineWidth: 24, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             HStack {
                 Text("Speaker 1 of 3")
-            }
             
             Spacer()
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Image(systemName: "forward.fill")
+                }
+                .accessibilityLabel(Text("Next Speaker"))
             }
         }
         .padding()
