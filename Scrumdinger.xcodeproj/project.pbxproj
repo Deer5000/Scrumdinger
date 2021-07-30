@@ -12,6 +12,7 @@
 		ADE082E626B20FF00014A3EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE082E526B20FF00014A3EA /* Assets.xcassets */; };
 		ADE082E926B20FF00014A3EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE082E826B20FF00014A3EA /* Preview Assets.xcassets */; };
 		ADE082F126B3995C0014A3EA /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE082F026B3995C0014A3EA /* DailyScrum.swift */; };
+		ADE082F326B4262A0014A3EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE082F226B4262A0014A3EA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ADE082E826B20FF00014A3EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADE082EA26B20FF00014A3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE082F026B3995C0014A3EA /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		ADE082F226B4262A0014A3EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				ADE082E126B20FED0014A3EA /* ScrumdingerApp.swift */,
 				ADE082E326B20FED0014A3EA /* MeetingView.swift */,
 				ADE082F026B3995C0014A3EA /* DailyScrum.swift */,
+				ADE082F226B4262A0014A3EA /* CardView.swift */,
 				ADE082E526B20FF00014A3EA /* Assets.xcassets */,
 				ADE082EA26B20FF00014A3EA /* Info.plist */,
 				ADE082E726B20FF00014A3EA /* Preview Content */,
@@ -143,6 +146,7 @@
 			files = (
 				ADE082E426B20FED0014A3EA /* MeetingView.swift in Sources */,
 				ADE082F126B3995C0014A3EA /* DailyScrum.swift in Sources */,
+				ADE082F326B4262A0014A3EA /* CardView.swift in Sources */,
 				ADE082E226B20FED0014A3EA /* ScrumdingerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
