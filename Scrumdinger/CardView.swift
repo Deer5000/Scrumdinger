@@ -43,4 +43,4 @@ struct CardView_Previews: PreviewProvider {
     }
 }
 
-
+//.accesibility makes each CardView accesible and integrates apples accesibilty elements.
