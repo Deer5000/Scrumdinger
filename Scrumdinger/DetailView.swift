@@ -13,15 +13,18 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
+                NavigationLink(destination: MeetingView()) {
                 Label("Start Meeting", systemImage: "timer")
                     .accessibilityLabel(Text("Start Meeting"))
                     .foregroundColor(.accentColor)
                     .font(.headline)
+                }
                 HStack {
                     Label("Length", systemImage: "clock")
                         .accessibilityLabel(Text("Meeting Length"))
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
+                }
                 HStack {
                     Label("Color", systemImage: "paintpalette")
                     Spacer()
@@ -39,6 +42,7 @@ struct DetailView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
+            .navigationTitle(scrum.title)
         }
     }
 
