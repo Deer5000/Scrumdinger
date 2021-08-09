@@ -15,6 +15,7 @@
 		ADE082F326B4262A0014A3EA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE082F226B4262A0014A3EA /* CardView.swift */; };
 		ADE0830F26B57A5F0014A3EA /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0830E26B57A5F0014A3EA /* ScrumsView.swift */; };
 		ADE0831126B984FC0014A3EA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0831026B984FC0014A3EA /* DetailView.swift */; };
+		ADE0831326C169060014A3EA /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0831226C169050014A3EA /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ADE082F226B4262A0014A3EA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ADE0830E26B57A5F0014A3EA /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		ADE0831026B984FC0014A3EA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		ADE0831226C169050014A3EA /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				ADE082E126B20FED0014A3EA /* ScrumdingerApp.swift */,
 				ADE082F226B4262A0014A3EA /* CardView.swift */,
 				ADE082F026B3995C0014A3EA /* DailyScrum.swift */,
+				ADE0831226C169050014A3EA /* EditView.swift */,
 				ADE0831026B984FC0014A3EA /* DetailView.swift */,
 				ADE082E326B20FED0014A3EA /* MeetingView.swift */,
 				ADE0830E26B57A5F0014A3EA /* ScrumsView.swift */,
@@ -154,6 +157,7 @@
 				ADE0831126B984FC0014A3EA /* DetailView.swift in Sources */,
 				ADE082F126B3995C0014A3EA /* DailyScrum.swift in Sources */,
 				ADE082F326B4262A0014A3EA /* CardView.swift in Sources */,
+				ADE0831326C169060014A3EA /* EditView.swift in Sources */,
 				ADE0830F26B57A5F0014A3EA /* ScrumsView.swift in Sources */,
 				ADE082E226B20FED0014A3EA /* ScrumdingerApp.swift in Sources */,
 			);
