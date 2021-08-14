@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var scrumData: DailyScrum.Data = DailyScrum.Data()
+    @Binding var scrumData: DailyScrum.Data
     @State private var newAttendee = ""
     var body: some View {
         List {
@@ -18,14 +18,17 @@ struct EditView: View {
                     Slider(value: $scrumData.lengthInMinutes, in: 5...30, step: 1.0) {
                         Text("Length")
                     }
+                    .accessibilityValue(Text("\(Int(scrumData.lengthInMinutes)) minutes"))
                     Spacer()
                     Text("\(Int(scrumData.lengthInMinutes)) minutes")
+                        .accessibilityHidden(true)
                 }
                 ColorPicker("Color", selection: $scrumData.color)
+                    .accessibilityLabel(Text("color picker"))
             }
             Section(header: Text("Attendees")) {
                 ForEach(scrumData.attendees, id: \.self) { attendee in
-                Text(attendee)
+                    Text(attendee)
                 }
                 .onDelete { indices in
                     scrumData.attendees.remove(atOffsets: indices)
@@ -35,10 +38,11 @@ struct EditView: View {
                     Button(action: {
                         withAnimation {
                             scrumData.attendees.append(newAttendee)
-                            newAttendee = ""
                         }
+                        newAttendee = ""
                     }) {
                         Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel(Text("add attendee"))
                     }
                     .disabled(newAttendee.isEmpty)
                 }
@@ -50,6 +54,7 @@ struct EditView: View {
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView()
+        EditView(scrumData: .constant(DailyScrum.data[0].data))
     }
 }
+
